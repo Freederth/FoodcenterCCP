@@ -64,11 +64,18 @@ h2, h3, h5{
 }
 
 /* main */
-main {
+.mainAcerca{
   font-family: 'Roboto', sans-serif;
   margin: 20px;
   padding: 20px;
   height: 110vh;
+}
+.mainUbicacion{
+    font-family: 'Roboto',
+    sans-serif;
+    margin: 20px;
+    padding: 20px;
+    height: 90vh;
 }
 h3{
   margin-top: 20px;
