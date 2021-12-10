@@ -146,3 +146,80 @@ footer a {
   text-decoration: none;
   color: #fff;
 }
+.gallery{
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+  margin-top: 20px ;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.gallery p{
+  box-sizing: border-box;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 10px;
+}
+#image-1{
+  box-sizing: border-box;
+  width: calc(100%*1/4);
+  border: solid lightsteelblue;
+  background-color: lightblue;
+}
+#image-2 {
+  box-sizing: border-box;
+  width: calc(100%*1/4);
+  border: solid lightsteelblue;
+  background-color: lightblue;
+}
+#image-3 {
+  box-sizing: border-box;
+  width: calc(100%*1/4);
+  border: solid lightsteelblue;
+  background-color: lightblue;
+}
+#image-4 {
+  box-sizing: border-box;
+  width: calc(100%*1/4);
+  border: solid lightsteelblue;
+  background-color: lightblue;
+}
+#image-5 {
+  box-sizing: border-box;
+  width: calc(100%*1/4);
+  border: solid lightsteelblue;
+  background-color: lightblue;
+}
+#image-6 {
+  box-sizing: border-box;
+  width: calc(100%*1/4);
+  border: solid lightsteelblue;
+  background-color: lightblue;
+}
+#image-7 {
+  box-sizing: border-box;
+  width: calc(100%*1/4);
+  border: solid lightsteelblue;
+  background-color: lightblue;
+}
+#image-8 {
+  box-sizing: border-box;
+  width: calc(100%*1/4);
+  border: solid lightsteelblue;
+  background-color: lightblue;
+}
+#image-sand {
+  box-sizing: border-box;
+  width: calc(100%*1/2);
+}
+
+#image-text {
+  box-sizing: border-box;
+  width: calc(100%*1/2);
+}
+#image-text p{
+  margin-top: 50px;
+  color: black;
+}
