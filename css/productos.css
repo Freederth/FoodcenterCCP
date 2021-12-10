@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  background-color: lightblue;
+}
+
+header img {
+  padding: 10px;
+}
+
+header img:hover {
+  background-color: cyan;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header nav {
+  height: 100px;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  font-family: 'Amatic SC', cursive;
+}
+
+header nav ul {
+  list-style: none;
+  /* background-color: coral; */
+  display: flex;
+  justify-content: space-evenly;
+}
+
+header nav ul li {
+  display: inline-block;
+  /* background-color: indigo; */
+  padding: 20px;
+  font-size: 25px;
+}
+
+header nav li:hover {
+  background-color: cyan;
+}
+
+header nav li:active {
+  background-color: orchid;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #fff;
+}
+h2{
+  font-family: 'Oswald', sans-serif;
+  margin-bottom: 10px;
+}
+p{
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+.ytvid{
+  margin: 10px;
+  border: 20px;
+}
+
+/* main */
+main{
+  margin: 20px;
+  padding: 20px;
+  height: 200vh;
+}
+main ul li{
+  list-style: square;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 5px;
+}
+main ul li a{
+  color: blue;
+  text-decoration: solid;
+}
+.info{
+  height: 70vh;
+}
+.info2 {
+  height: 35vh;
+  margin-top: 50px;
+  border: 2px solid coral;
+}
+
+/* footer */
+footer {
+  background-color: lightblue;
+  font-family: 'Amatic SC', cursive;
+  height: 200px;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.foot1 img {
+  width: 18%;
+}
+
+.logo {
+  align-items: flex-start;
+  margin-left: 10px;
+}
+
+.logo:hover {
+  background-color: cyan;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer ul li {
+  padding: 20px;
+  font-size: 15px;
+}
+
+.foot1 ul li {
+  flex-direction: row;
+}
+
+footer li:hover {
+  background-color: cyan;
+}
+
+footer li:active {
+  background-color: orchid;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
+}

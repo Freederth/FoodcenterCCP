@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+header{
+  display: flex;
+  background-color: lightblue;
+}
+header img{
+  padding: 10px;
+}
+header img:hover{
+  background-color: cyan;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+header nav{
+  height: 100px;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  font-family: 'Amatic SC', cursive;
+}
+header nav ul{
+  list-style: none;
+  /* background-color: coral; */
+  display: flex;
+  justify-content: space-evenly;
+}
+header nav ul li{
+    display: inline-block;
+    /* background-color: indigo; */
+    padding: 20px;
+    font-size: 25px;
+}
+
+header nav li:hover{
+  background-color: cyan;
+}
+
+header nav li:active{
+  background-color: orchid;
+}
+
+header nav a{
+  text-decoration: none;
+  color: #fff;
+}
+main{
+  margin-bottom: 50px;
+}
+.parrafo{
+  margin: 20px;
+  padding: 20px;
+  margin-bottom: 5px;
+  border: 10px;
+  box-sizing: border-box;
+  text-align:justify;
+  font-family: 'Roboto', sans-serif;
+}
+.parrafo p{
+  margin-bottom: 10px;
+}
+.parrafo ul{
+  list-style: square;
+  margin-bottom: 5px;
+}
+.fotoPerro{
+  align-items: center;
+}
+button{
+  background-color: #678fe0;
+  border-color: lightblue;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+  margin-left: 30px;
+  font-family: 'Roboto', sans-serif;
+}
+button a{
+    text-decoration: none;
+    color: white;
+}
+button:hover{
+  background-color: lightseagreen;
+}
+
+/* footer */
+footer{
+  background-color: lightblue;
+  font-family: 'Amatic SC', cursive;
+  height: 200px;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.foot1 img{
+  width: 18%;
+}
+.logo{
+  align-items:flex-start;
+  margin-left: 10px;
+}
+.logo:hover {
+  background-color: cyan;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer ul li {
+  padding: 20px;
+  font-size: 15px;
+}
+.foot1 ul li{
+  flex-direction: row;
+}
+
+footer li:hover {
+  background-color: cyan;
+}
+
+footer li:active {
+  background-color: orchid;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
