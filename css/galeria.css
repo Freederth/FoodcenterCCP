@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
+/* mantengo este archivo sólo para mantener el orden, o sea, que la página con galerías tenga su propio css, de todos modos es muy probable que todas mis galerías mantengan su estilo a través de la página*/
+
 * {
   margin: 0;
   padding: 0;

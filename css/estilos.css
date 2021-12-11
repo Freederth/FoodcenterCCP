@@ -59,25 +59,124 @@ header nav a {
   text-decoration: none;
   color: #fff;
 }
-h2{
+h2, h3, h5{
   font-family: 'Oswald', sans-serif;
 }
 
-/* main */
-main {
+/* main acerca_de*/
+.mainAcerca{
+  font-family: 'Roboto', sans-serif;
+  margin: 20px;
+  padding: 20px;
+  height: 110vh;
+}
+/* main ubicación */
+.mainUbicacion{
+    font-family: 'Roboto',
+    sans-serif;
+    margin: 20px;
+    padding: 20px;
+    height: 90vh;
+}
+
+/* weás pal contact, main y form */
+.mainContact{
   font-family: 'Roboto', sans-serif;
   margin: 20px;
   padding: 20px;
   height: 80vh;
 }
-h2{
+
+.formContact {
+  margin: 10px;
+  margin-top: 50px;
+}
+
+/* estilos para clase párrafo y la foto del perro*/
+.parrafo {
+  margin: 20px;
+  padding: 20px;
+  margin-bottom: 10px;
+  border: 10px;
+  box-sizing: border-box;
+  text-align: justify;
+  font-family: 'Roboto', sans-serif;
+}
+.parrafo p {
   margin-bottom: 10px;
 }
-p{
+
+.parrafo ul {
+  list-style: square;
   margin-bottom: 5px;
 }
-form{
+
+.fotoPerro {
+  align-items: center;
+}
+
+button {
+  background-color: #678fe0;
+  border-color: lightblue;
+  align-items: center;
+  padding: 10px;
   margin: 10px;
+  margin-left: 30px;
+  font-family: 'Roboto', sans-serif;
+}
+
+button a {
+  text-decoration: none;
+  color: white;
+}
+
+button:hover {
+  background-color: lightseagreen;
+}
+
+h3{
+  margin-top: 20px;
+}
+p{
+  align-items: center;
+  margin: 10px;
+  border: 20px;
+  padding: 5px;
+  width: 75%;
+}
+.misyvis{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+  width: 50%;
+}
+.misyvis h5{
+  color: blue;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+#mis{
+  box-sizing: border-box;
+  width: calc(100%*1/2);
+  border: solid lightsteelblue;
+}
+
+#vis{
+  box-sizing: border-box;
+  width: calc(100%*1/2);
+  border: solid lightsteelblue;
+}
+.perrofeliz{
+  box-sizing: border-box;
+  align-content: center;
+  margin-left: 200px;
+  margin-bottom: 20px;
+}
+
+#privacidad{
   margin-top: 50px;
 }
 
