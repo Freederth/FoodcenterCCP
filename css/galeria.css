@@ -79,7 +79,7 @@ p{
 main{
   margin: 20px;
   padding: 20px;
-  height: 200vh;
+  height: 214vh;
 }
 #patita{
   width: 250px;
@@ -93,13 +93,117 @@ main ul li a{
   color: blue;
   text-decoration: solid;
 }
-.info{
-  height: 70vh;
+.primera{
+  display: grid;
 }
+.info{
+  height: 25vh;
+  width: 1fr;
+}
+
+.videoyt{
+  height: 50vh;
+  width: 1fr;
+}
+
 .info2 {
-  height: 35vh;
+  height: 40vh;
   margin-top: 50px;
   border: 2px solid coral;
+}
+
+/* configuración de la galería */
+.gallery {
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.gallery img {
+  width: 200px;
+}
+
+.gallery p {
+  box-sizing: border-box;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+#image-1 {
+  box-sizing: border-box;
+  width: calc(100%*1/4);
+  border: solid lightsteelblue;
+  background-color: lightblue;
+}
+
+#image-2 {
+  box-sizing: border-box;
+  width: calc(100%*1/4);
+  border: solid lightsteelblue;
+  background-color: lightblue;
+}
+
+#image-3 {
+  box-sizing: border-box;
+  width: calc(100%*1/4);
+  border: solid lightsteelblue;
+  background-color: lightblue;
+}
+
+#image-4 {
+  box-sizing: border-box;
+  width: calc(100%*1/4);
+  border: solid lightsteelblue;
+  background-color: lightblue;
+}
+
+#image-5 {
+  box-sizing: border-box;
+  width: calc(100%*1/4);
+  border: solid lightsteelblue;
+  background-color: lightblue;
+}
+
+#image-6 {
+  box-sizing: border-box;
+  width: calc(100%*1/4);
+  border: solid lightsteelblue;
+  background-color: lightblue;
+}
+
+#image-7 {
+  box-sizing: border-box;
+  width: calc(100%*1/4);
+  border: solid lightsteelblue;
+  background-color: lightblue;
+}
+
+#image-8 {
+  box-sizing: border-box;
+  width: calc(100%*1/4);
+  border: solid lightsteelblue;
+  background-color: lightblue;
+}
+
+#image-sand {
+  box-sizing: border-box;
+  width: calc(100%*1/2);
+}
+
+#image-text {
+  box-sizing: border-box;
+  width: calc(100%*1/2);
+}
+
+#image-text p {
+  margin-top: 50px;
+  color: black;
 }
 
 /* footer */
@@ -154,81 +258,4 @@ footer li:active {
 footer a {
   text-decoration: none;
   color: #fff;
-}
-.gallery{
-  box-sizing: border-box;
-  width: 100%;
-  text-align: center;
-  margin-top: 20px ;
-  color: white;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-.gallery p{
-  box-sizing: border-box;
-  font-size: 15px;
-  font-weight: bold;
-  margin: 10px;
-}
-#image-1{
-  box-sizing: border-box;
-  width: calc(100%*1/4);
-  border: solid lightsteelblue;
-  background-color: lightblue;
-}
-#image-2 {
-  box-sizing: border-box;
-  width: calc(100%*1/4);
-  border: solid lightsteelblue;
-  background-color: lightblue;
-}
-#image-3 {
-  box-sizing: border-box;
-  width: calc(100%*1/4);
-  border: solid lightsteelblue;
-  background-color: lightblue;
-}
-#image-4 {
-  box-sizing: border-box;
-  width: calc(100%*1/4);
-  border: solid lightsteelblue;
-  background-color: lightblue;
-}
-#image-5 {
-  box-sizing: border-box;
-  width: calc(100%*1/4);
-  border: solid lightsteelblue;
-  background-color: lightblue;
-}
-#image-6 {
-  box-sizing: border-box;
-  width: calc(100%*1/4);
-  border: solid lightsteelblue;
-  background-color: lightblue;
-}
-#image-7 {
-  box-sizing: border-box;
-  width: calc(100%*1/4);
-  border: solid lightsteelblue;
-  background-color: lightblue;
-}
-#image-8 {
-  box-sizing: border-box;
-  width: calc(100%*1/4);
-  border: solid lightsteelblue;
-  background-color: lightblue;
-}
-#image-sand {
-  box-sizing: border-box;
-  width: calc(100%*1/2);
-}
-
-#image-text {
-  box-sizing: border-box;
-  width: calc(100%*1/2);
-}
-#image-text p{
-  margin-top: 50px;
-  color: black;
 }
