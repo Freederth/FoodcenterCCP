@@ -81,6 +81,9 @@ main{
   padding: 20px;
   height: 200vh;
 }
+#patita{
+  width: 250px;
+}
 main ul li{
   list-style: square;
   font-family: 'Roboto', sans-serif;
@@ -108,6 +111,10 @@ footer {
   align-items: center;
   display: flex;
   justify-content: space-between;
+}
+
+#patita2{
+  width: 250px;
 }
 
 .foot1 img {

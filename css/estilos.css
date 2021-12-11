@@ -70,6 +70,12 @@ h2, h3, h5{
   padding: 20px;
   height: 110vh;
 }
+#patita{
+  width:250px;
+}
+#patita2 {
+  width: 250px;
+}
 /* main ubicación */
 .mainUbicacion{
     font-family: 'Roboto',
