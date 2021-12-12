@@ -206,7 +206,6 @@ p{
 /* footer */
 footer {
   background-color: lightblue;
-  font-family: 'Amatic SC', cursive;
   height: 200px;
   width: 100%;
   align-items: center;
@@ -249,6 +248,12 @@ footer li:active {
 }
 
 footer a {
+  font-family: 'Amatic SC',
+  cursive;
   text-decoration: none;
   color: #fff;
+}
+.derechos p {
+  font-family: 'Roboto',
+    sans-serif;
 }

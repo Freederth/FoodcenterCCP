@@ -65,7 +65,7 @@ h2{
   font-family: 'Oswald', sans-serif;
   margin-bottom: 10px;
 }
-p{
+main p{
   margin-top: 10px;
   margin-bottom: 20px;
   font-family: 'Roboto', sans-serif;
@@ -289,7 +289,6 @@ main ul li a{
 /* footer */
 footer {
   background-color: lightblue;
-  font-family: 'Amatic SC', cursive;
   height: 200px;
   width: 100%;
   align-items: center;
@@ -336,6 +335,12 @@ footer li:active {
 }
 
 footer a {
+  font-family: 'Amatic SC',
+  cursive;
   text-decoration: none;
   color: #fff;
+}
+.derechos p{
+  font-family: 'Roboto',
+  sans-serif;
 }
