@@ -5,45 +5,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Productos</title>
-    <link rel="stylesheet" href="../css/galeria.css" />
+
+    <!-- links propios -->
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/estilos.css" />
+
+    <!-- bs link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <header>
-      <div class="logo">
-        <a href="../index.html">
-          <img src="../img/patita.png" alt="logo" id="patita"
+      <!-- espacio extra -->
+      <!-- aquí empieza el navbar -->
+      <nav
+        class="navbar navbar-expand-lg navbar-light"
+        style="background-color: #e3f2fd"
+      >
+        <a class="navbar-brand logo" href="../index.html"
+          ><img src="../img/patita.png" alt="logo" id="patita"
         /></a>
-      </div>
-      <nav>
-        <ul>
-          <li>
-            <a href="../index.html  "><b>INICIO</b></a>
-          </li>
-          <li>
-            <a href="./acerca_de.html"><b>ACERCA DE</b></a>
-          </li>
-          <li>
-            <a href="./ubicacion.html"><b>UBICACIÓN</b></a>
-          </li>
-          <li>
-            <a href="./productos.html"><b>PRODUCTOS</b></a>
-          </li>
-          <li>
-            <a href="./contacto.html"><b>CONTACTO</b></a>
-          </li>
-        </ul>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="../index.html"
+                >Inicio <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/acerca_de.html">Acerca de</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/productos.html">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/ubicacion.html">Ubicación</a>
+            </li>
+          </ul>
+        </div>
       </nav>
-      <hr />
+      <!-- fin del navbar -->
     </header>
-    <main>
-      <div class="primera">
+
+    <!-- inicio main -->
+    <main class="mainProductos">
+      <div class="primera container">
         <div class="info">
           <h2>Nuestros Productos</h2>
           <ul>
             <li><a href="#comidas">Comida de perros</a></li>
             <li><a href="#comidas">Comida de gatos</a></li>
             <li>
-              <a href="#arenas">Arenas Sanitarias</a>
+              <a href="#arenas">Arenas sanitarias</a>
             </li>
           </ul>
           <p>
@@ -68,66 +100,145 @@
           ></iframe>
         </div>
       </div>
-      <h2>Alimentos que tenemos</h2>
 
-      <div class="gallery1" id="comidas">
-        <div id="image-1">
-          <img
-            class="gallery__img"
-            src="../img/img1.png"
-            title="Vitalcan Complete perro adulto razas medianas y grandes"
-          />
-          <p>Vitalcan Complete perro adulto razas medianas y grandes.</p>
-        </div>
-        <div id="image-2">
-          <img class="gallery__img" src="../img/img2.png" />
-          <p>Vitalcan Complete gatos cachorros.</p>
-        </div>
-
-        <div id="image-3">
-          <img class="gallery__img" src="../img/img3.png" />
-          <p>Vitalcan Complete gato adulto control peso.</p>
-        </div>
-
-        <div id="image-4">
-          <img class="gallery__img" src="../img/img4.png" />
-          <p>Vitalcan Complete perro junior razas medianas y grandes.</p>
-        </div>
-
-        <div id="image-5">
-          <img class="gallery__img" src="../img/img5.png" />
-          <p>Vitalcan Complete perro junior razas pequeñas.</p>
-        </div>
-
-        <div id="image-6">
-          <img class="gallery__img" src="../img/img6.png" />
-          <p>Vitalcan Complete perro adulto razas pequeñas.</p>
-        </div>
-
-        <div id="image-7">
-          <img
-            class="gallery__img"
-            src="../img/img7.png"
-            title="Vitalcan Complete perro junior razas pequeñas"
-          />
-          <p>Vitalcan Complete perro adulto control peso.</p>
-        </div>
-        <div id="image-8">
-          <img class="gallery__img" src="../img/img8.png" />
-          <p>Vitalcan Complete perro senior razas medianas y grandes.</p>
-        </div>
-      </div>
-      <br />
-      <div class="info2" id="arenas">
-        <div class="gallery2">
-          <div id="image-sand">
+      <div class="gallery1 container" id="comidas">
+        <h2>Alimentos que tenemos</h2>
+        <div class="laGaleria row">
+          <!-- primer elemento -->
+          <div class="card col-lg-3" style="width: 18rem" id="image-1">
             <img
+              class="gallery__img"
+              src="../img/img1.png"
+              title="Vitalcan Complete perro adulto razas medianas y grandes"
+            />
+            <div class="card-body">
+              <h6 class="card-title">
+                Vitalcan Complete perro adulto razas medianas y grandes
+              </h6>
+            </div>
+          </div>
+
+          <!-- segundo -->
+          <div class="card col-lg-3" style="width: 18rem" id="image-2">
+            <img
+              class="gallery__img"
+              src="../img/img2.png"
+              title="Vitalcan Complete gatos cachorros"
+            />
+            <div class="card-body">
+              <h6 class="card-title">Vitalcan Complete gatos cachorros.</h6>
+            </div>
+          </div>
+
+          <!-- tercero -->
+          <div class="card col-lg-3" style="width: 18rem" id="image3">
+            <img
+              class="gallery__img"
+              src="../img/img3.png"
+              title="Vitalcan Complete gato adulto control peso"
+            />
+            <div class="card-body">
+              <h6 class="card-title">
+                Vitalcan Complete gato adulto control peso.
+              </h6>
+            </div>
+          </div>
+
+          <!-- cuarto -->
+          <div class="card col-lg-3" style="width: 18rem" id="image4">
+            <img
+              class="gallery__img"
+              src="../img/img4.png"
+              title="Vitalcan Complete perro junior razas medianas y grandes"
+            />
+            <div class="card-body">
+              <h6 class="card-title">
+                Vitalcan Complete perro junior razas medianas y grandes.
+              </h6>
+            </div>
+          </div>
+
+          <!-- quinto -->
+          <div class="card col-lg-3" style="width: 18rem" id="image5">
+            <img
+              class="gallery__img"
+              src="../img/img5.png"
+              title="Vitalcan Complete perro junior razas pequeñas"
+            />
+            <div class="card-body">
+              <h6 class="card-title">
+                Vitalcan Complete perro junior razas pequeñas.
+              </h6>
+            </div>
+          </div>
+
+          <!-- sexto -->
+          <div class="card col-lg-3" style="width: 18rem" id="image6">
+            <img
+              class="gallery__img"
+              src="../img/img6.png"
+              title="Vitalcan Complete perro adulto razas pequeñas"
+            />
+            <div class="card-body">
+              <h6 class="card-title">
+                Vitalcan Complete perro adulto razas pequeñas.
+              </h6>
+            </div>
+          </div>
+
+          <!-- séptimo -->
+          <div class="card col-lg-3" style="width: 18rem" id="image7">
+            <img
+              class="gallery__img"
+              src="../img/img7.png"
+              title="Vitalcan Complete perro adulto control peso"
+            />
+            <div class="card-body">
+              <h6 class="card-title">
+                Vitalcan Complete perro adulto control peso.
+              </h6>
+            </div>
+          </div>
+
+          <!-- octavo -->
+          <div class="card col-lg-3" style="width: 18rem" id="image8">
+            <img
+              class="gallery__img"
+              src="../img/img8.png"
+              title="Vitalcan Complete perro senior razas medianas y grandes."
+            />
+            <div class="card-body">
+              <h6 class="card-title">
+                Vitalcan Complete perro senior razas medianas y grandes.
+              </h6>
+            </div>
+          </div>
+          <!-- noveno -->
+          <!-- <div class="card col-lg-3" style="width: 18rem" id="image9">
+            <img
+              class="gallery__img"
+              src="../img/img9.png"
+              title="Belcan Perro adulto"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Belcan Perro adulto.</h5>
+            </div>
+          </div> -->
+        </div>
+        <!-- fin galería -->
+      </div>
+
+      <div class="info2 container" id="arenas">
+        <div class="gallery2 row">
+          <div class="col-lg-6 container">
+            <img
+              id="image-sand"
               class="gallery_img"
               src="../img/img-sand.png"
               alt="arena sanitaria"
             />
           </div>
-          <div id="image-text">
+          <div class="col-lg-6 container" id="image-text">
             <p>
               Canada Litter Arena Sanitaria para gatos hecha de bentonita de
               sodio y se produce en Canadá. Posee una capacidad de absorción del
@@ -146,64 +257,120 @@
       </div>
     </main>
 
-    <footer>
-      <div class="logo">
-        <a href="../index.html">
-          <img src="../img/patita.png" alt="logo" id="patita2"
-        /></a>
-      </div>
-      <div class="foot1">
-        <nav>
-          <ul>
-            <li>
-              <a href="" target="_self"
-                ><img src="../img/fb_icon.png" alt="fb" /><strong>
-                  Facebook</strong
-                ></a
-              >
-            </li>
-            <li>
-              <a href=""
-                ><img src="../img/tw_icon.png" alt="tw" /><strong>
-                  Twitter</strong
-                ></a
-              >
-            </li>
-            <li>
-              <a href="http://www.instagram.com/foodcenterccp" target="_self"
-                ><img src="../img/ig_icon.png" alt="ig" /><strong>
-                  Instagram</strong
-                ></a
-              >
-            </li>
-          </ul>
-        </nav>
+    <!-- aquí comienza el footer -->
+    <footer
+      class="container-fluid nav-light footer col-l"
+      style="background-color: #e3f2fd"
+    >
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-sm-6">
+              <div class="address">
+                <a href="/index.html"
+                  ><img class="logo" src="../img/patita.png" alt="logo"
+                /></a>
+                <p class="mb-4 mt-4">Galvarino 999, Concepción, Chile</p>
+                <p><strong>Teléfono:</strong> +56 9 13245678</p>
+                <p><strong>Email:</strong> foodcenterccp@gmail.com</p>
+              </div>
+            </div>
+
+            <div class="col-lg-2 col-sm-6 footer-menus">
+              <h4>Links</h4>
+              <ul>
+                <li>
+                  <i class="fas fa-check"></i>
+                  <a href="../index.html">Inicio</a>
+                </li>
+                <li>
+                  <i class="fas fa-check"></i>
+                  <a href="../pages/acerca_de.html">Acerca de</a>
+                </li>
+                <li>
+                  <i class="fas fa-check"></i>
+                  <a href="../pages/contacto.html">Contacto</a>
+                </li>
+                <li>
+                  <i class="fas fa-check"></i>
+                  <a href="../pages/productos.html">Productos</a>
+                </li>
+                <li>
+                  <i class="fas fa-check"></i>
+                  <a href="../pages/acerca_de.html">Términos</a>
+                </li>
+                <li>
+                  <i class="fas fa-check"></i>
+                  <a href="../pages/acerca_de.html">Privacidad</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-4 col-sm-6 newsletter">
+              <div class="social-links mt-3">
+                <ul>
+                  <li>
+                    <a href="#"
+                      ><i class="fab fa-facebook-f"
+                        ><img src="../img/fb_icon.png" alt="fb" /></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fab fa-twitter"
+                        ><img src="../img/tw_icon.png" alt="tw" /></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fab fa-instagram"
+                        ><img src="../img/ig_icon.png" alt="ig" /></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div class="foot2">
-        <nav>
-          <ul>
-            <li>
-              <a href="../pages/acerca_de.html"><strong>Acerca de</strong></a>
-            </li>
-            <li>
-              <a href="../pages/contacto.html"><strong>Contacto</strong></a>
-            </li>
-            <li>
-              <a href="../pages/acerca_de.html"
-                ><strong>Política de privacidad</strong></a
-              >
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <div class="derechos">
-        <p>Todos los derechos reservados.</p>
-        <p>
-          Sitio creado por
-          <a href="https://github.com/Freederth" target="out">I. Achurra.</a>
-        </p>
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <p class="text-center mb-2">
+                &copy; Copyright <strong>Foodcenter Concepción</strong>. Todos
+                los derechos reservados.
+              </p>
+              <p class="text-center mb-0">
+                Creado por
+                <a href="https://github.com/Freederth/" target="_blank"
+                  >I.Achurra</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
+    <!-- aquí teerminó el footer -->
+
+    <!-- scripts de bs -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+      integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+      crossorigin="anonymous"
+    ></script>
+    <!-- fin del script -->
   </body>
 </html>

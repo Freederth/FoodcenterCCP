@@ -1,848 +1,102 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+/* todavía quiero esta fuente para mis navs */
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
-/* tamaños para celulares */
+/* manejo de tamaños del logo para los 3 tamaños */
+/* tamaños para celu */
 @media (min-width:320px) {
-  header {
-    display: flex;
-    width: 100%;
-    background-color: lightblue;
-  }
-
-  header img {
-    padding: 10px;
-  }
-
-  header img:hover {
-    background-color: cyan;
-  }
-
-  html {
-    scroll-behavior: smooth;
-  }
-
-  header nav {
-    height: 10vh;
-    align-items: center;
-    display: flex;
-    justify-content: space-around;
-    font-family: 'Amatic SC', cursive;
-  }
-
-  header nav ul {
-    list-style: none;
-    /* background-color: coral; */
-    display: flex;
-    justify-content: space-evenly;
-  }
-
-  header nav ul li {
-    display: inline-block;
-    /* background-color: indigo; */
-    padding: 10px;
-    font-size: 16px;
-  }
-
-  header nav li:hover {
-    background-color: cyan;
-  }
-
-  header nav li:active {
-    background-color: orchid;
-  }
-
-  header nav a {
-    text-decoration: none;
-    color: #fff;
-  }
-
-  h2,
-  h3,
-  h5 {
-    font-family: 'Oswald', sans-serif;
-  }
-
-  /* main acerca_de*/
-  .mainAcerca {
-    font-family: 'Roboto', sans-serif;
-    margin: 20px;
-    padding: 20px;
-    height: 180vh;
-  }
-
-  #patita {
+  .logo img {
     width: 100px;
   }
-
-  #patita2 {
-    width: 100px;
+  .address img {
+    width: 130px;
   }
-
-  /* main ubicación */
-  .mainUbicacion {
-    font-family: 'Roboto', sans-serif;
-    margin: 20px;
-    padding: 20px;
-    height: 90vh;
-  }
-
-  .mainUbicacion iframe {
-    width: 380px;
-    height: 400px;
-  }
-
-  /* weás pal contact, main y form */
   .mainContact {
-    font-family: 'Roboto', sans-serif;
-    margin: 20px;
-    padding: 20px;
-    height: 80vh;
-    width: 100%;
+    height: 100vh;
   }
-
-  .formContact {
-    margin: 10px;
-    margin-top: 50px;
-  }
-
-  /* estilos para clase párrafo y la foto del perro*/
-  .parrafo {
-    margin: 20px;
-    padding: 20px;
-    margin-bottom: 10px;
-    border: 10px;
-    box-sizing: border-box;
-    text-align: justify;
-    font-family: 'Roboto', sans-serif;
-  }
-
-  .parrafo p {
-    margin-bottom: 10px;
-  }
-
-  .parrafo ul {
-    list-style: square;
-    margin-bottom: 5px;
-  }
-
-  .fotoPerro {
-    align-items: center;
-  }
-
-  #mascotitas {
-    width: 98vw;
-  }
-
-  .indexito {
-    height: 60vh;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(2, 50vw);
-  }
-
-  .indexito .parrafo {
-    margin-left: 50px;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .indexito button {
-    margin-top: 100px;
-    width: 40%;
-    height: 20%;
-    object-fit: contain;
-  }
-
-  .botoncito {
-    background-color: #678fe0;
-    border-color: lightblue;
-    align-items: center;
-    padding: 10px;
-    margin: 10px;
-    margin-left: 30px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
-  }
-
-  .botoncito a {
-    text-decoration: none;
-    color: white;
-  }
-
-  .botoncito:hover {
-    background-color: lightseagreen;
-  }
-
-  h3 {
-    margin-top: 20px;
-  }
-
-  main p {
-    align-items: center;
-    margin: 10px;
-    border: 20px;
-    padding: 5px;
-    width: 75%;
-  }
-
-  .misyvis {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    text-align: center;
-    width: 100%;
-  }
-
-  .misyvis h5 {
-    color: blue;
-    font-weight: bold;
-    box-sizing: border-box;
-  }
-
-  #mis {
-    box-sizing: border-box;
-    width: calc(100%*1/2);
-    border: solid lightsteelblue;
-  }
-
-  #vis {
-    box-sizing: border-box;
-    width: calc(100%*1/2);
-    border: solid lightsteelblue;
-  }
-
-  .perrofeliz {
-    box-sizing: border-box;
-    align-content: center;
-    margin-left: 50px;
-    margin-bottom: 20px;
-  }
-
-  #privacidad {
-    margin-top: 50px;
-  }
-
-  /* footer */
-  footer {
-    background-color: lightblue;
-    height: 20vh;
-    width: 100%;
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .foot1 img {
-    width: 18%;
-  }
-
-  .logo {
-    align-items: flex-start;
-    margin-left: 10px;
-  }
-
-  .logo:hover {
-    background-color: cyan;
-  }
-
-  footer ul {
-    list-style: none;
-  }
-
-  footer ul li {
-    padding: 10px;
-    font-size: 10px;
-  }
-
-  .foot1 ul li {
-    flex-direction: row;
-  }
-
-  footer li:hover {
-    background-color: cyan;
-  }
-
-  footer li:active {
-    background-color: orchid;
-  }
-
-  footer a {
-    font-family: 'Amatic SC', cursive;
-    font-size: 10px;
-    text-decoration: none;
-    color: #fff;
-  }
-
-  .derechos p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 12px;
-  }
+    .mainUbicacion iframe {
+      width: 300px;
+      height: 450px;
+    }
 }
 
-/* tamaño pa tablet */
+/* tamaños para tablet */
 @media (min-width:480px) {
-  header {
-    display: flex;
-    width: 100%;
-    background-color: lightblue;
+  .logo img {
+    width: 150px;
   }
-
-  header img {
-    padding: 10px;
+  .address img{
+    width: 180px;
   }
-
-  header img:hover {
-    background-color: cyan;
+  .mainContact {
+    height: 100vh;
   }
+    .mainUbicacion iframe {
+      width: 400px;
+      height: 400px;
+    }
+}
 
-  html {
-    scroll-behavior: smooth;
+/* tamaños para desktop */
+@media (min-width:1024px) {
+  .logo img {
+    width: 150px;
   }
-
-  header nav {
-    height: 10vh;
-    align-items: center;
-    display: flex;
-    justify-content: space-around;
-    font-family: 'Amatic SC', cursive;
+  .address img {
+    width: 180px;
   }
-
-  header nav ul {
-    list-style: none;
-    /* background-color: coral; */
-    display: flex;
-    justify-content: space-evenly;
-  }
-
-  header nav ul li {
-    display: inline-block;
-    /* background-color: indigo; */
-    padding: 25px;
-    font-size: 16px;
-  }
-
-  header nav li:hover {
-    background-color: cyan;
-  }
-
-  header nav li:active {
-    background-color: orchid;
-  }
-
-  header nav a {
-    text-decoration: none;
-    color: #fff;
-  }
-
-  h2,
-  h3,
-  h5 {
-    font-family: 'Oswald', sans-serif;
-  }
-
-  /* main acerca_de*/
   .mainAcerca {
-    font-family: 'Roboto', sans-serif;
-    margin: 20px;
-    padding: 20px;
     height: 120vh;
   }
-
-  #patita {
-    width: 180px;
+  .mainContact{
+    height: 100vh;
   }
-
-  #patita2 {
-    width: 180px;
+  .primera iframe {
+    width: 500px;
+    height: 300px;
   }
-
-  /* main ubicación */
-  .mainUbicacion {
-    font-family: 'Roboto', sans-serif;
-    margin: 20px;
-    padding: 20px;
-    height: 80vh;
-  }
-
-  .mainUbicacion iframe {
-    width: 600px;
-    height: 450px;
-  }
-
-  /* weás pal contact, main y form */
-  .mainContact {
-    font-family: 'Roboto', sans-serif;
-    margin: 20px;
-    padding: 20px;
-    height: 80vh;
-    width: 100%;
-  }
-
-  .formContact {
-    margin: 10px;
-    margin-top: 50px;
-  }
-
-  /* estilos para clase párrafo y la foto del perro*/
-  .parrafo {
-    margin: 20px;
-    padding: 20px;
-    margin-bottom: 10px;
-    border: 10px;
-    box-sizing: border-box;
-    text-align: justify;
-    font-family: 'Roboto', sans-serif;
-  }
-
-  .parrafo p {
-    margin-bottom: 10px;
-  }
-
-  .parrafo ul {
-    list-style: square;
-    margin-bottom: 5px;
-  }
-
-  .fotoPerro {
-    align-items: center;
-  }
-
-  #mascotitas {
-    width: 98vw;
-  }
-
-  .indexito {
-    height: 60vh;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(2, 35vw);
-  }
-
-  .indexito .parrafo {
-    margin-left: 50px;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .indexito button {
-    margin-top: 100px;
-    width: 40%;
-    height: 20%;
-    object-fit: contain;
-  }
-
-  .botoncito {
-    background-color: #678fe0;
-    border-color: lightblue;
-    align-items: center;
-    padding: 10px;
-    margin: 10px;
-    margin-left: 30px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
-  }
-
-  .botoncito a {
-    text-decoration: none;
-    color: white;
-  }
-
-  .botoncito:hover {
-    background-color: lightseagreen;
-  }
-
-  h3 {
-    margin-top: 20px;
-  }
-
-  main p {
-    align-items: center;
-    margin: 10px;
-    border: 20px;
-    padding: 5px;
-    width: 75%;
-  }
-
-  .misyvis {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    text-align: center;
-    width: 100%;
-  }
-
-  .misyvis h5 {
-    color: blue;
-    font-weight: bold;
-    box-sizing: border-box;
-  }
-
-  #mis {
-    box-sizing: border-box;
-    width: calc(100%*1/2);
-    border: solid lightsteelblue;
-  }
-
-  #vis {
-    box-sizing: border-box;
-    width: calc(100%*1/2);
-    border: solid lightsteelblue;
-  }
-
-  .perrofeliz {
-    box-sizing: border-box;
-    align-content: center;
-    margin-left: 50px;
-    margin-bottom: 20px;
-  }
-
-  #privacidad {
-    margin-top: 50px;
-  }
-
-  /* footer */
-  footer {
-    background-color: lightblue;
-    height: 20vh;
-    width: 100%;
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .foot1 img {
-    width: 18%;
-  }
-
-  .logo {
-    align-items: flex-start;
-    margin-left: 10px;
-  }
-
-  .logo:hover {
-    background-color: cyan;
-  }
-
-  footer ul {
-    list-style: none;
-  }
-
-  footer ul li {
-    padding: 10px;
-    font-size: 10px;
-  }
-
-  .foot1 ul li {
-    flex-direction: row;
-  }
-
-  footer li:hover {
-    background-color: cyan;
-  }
-
-  footer li:active {
-    background-color: orchid;
-  }
-
-  footer a {
-    font-family: 'Amatic SC', cursive;
-    font-size: 10px;
-    text-decoration: none;
-    color: #fff;
-  }
-
-  .derechos p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 12px;
+  .mainUbicacion iframe{
+    width: 500px;
+    height: 500px;
   }
 }
+.navbar{
+  font-family: 'Amatic SC',cursive;
+  font-size: 30px;
+  font-weight: 800;
+}
 
-/* desktop mode */
-@media (min-width:1024px){
-  header {
-    display: flex;
-    background-color: lightblue;
-  }
+.indexito{
+  height: 40vh;
+}
+.btn a{
+  color: white;
+}
 
-  header img {
-    padding: 10px;
-  }
+.social-links li{
+  list-style-type: none;
+}
+.social-links img{
+  width: 30px;
+}
 
-  header img:hover {
-    background-color: cyan;
-  }
-
-  html {
-    scroll-behavior: smooth;
-  }
-
-  header nav {
-    height: 100px;
-    width: 100%;
-    align-items: center;
-    display: flex;
-    justify-content: space-around;
-    font-family: 'Amatic SC', cursive;
-  }
-
-  header nav ul {
-    list-style: none;
-    /* background-color: coral; */
-    display: flex;
-    justify-content: space-evenly;
-  }
-
-  header nav ul li {
-    display: inline-block;
-    /* background-color: indigo; */
-    padding: 20px;
-    font-size: 25px;
-  }
-
-  header nav li:hover {
-    background-color: cyan;
-  }
-
-  header nav li:active {
-    background-color: orchid;
-  }
-
-  header nav a {
-    text-decoration: none;
-    color: #fff;
-  }
-
-  h2,
-  h3,
-  h5 {
-    font-family: 'Oswald', sans-serif;
-  }
-
-  /* main acerca_de*/
-  .mainAcerca {
-    font-family: 'Roboto', sans-serif;
-    margin: 20px;
-    padding: 20px;
-    height: 110vh;
-  }
-
-  #patita {
-    width: 250px;
-  }
-
-  #patita2 {
-    width: 250px;
-  }
-
-  /* main ubicación */
-  .mainUbicacion {
-    font-family: 'Roboto',
-      sans-serif;
-    margin: 20px;
-    padding: 20px;
-    height: 90vh;
-  }
-  .mainUbicacion iframe {
-    width: 600px;
-    height: 450px;
-  }
-
-  /* weás pal contact, main y form */
-  .mainContact {
-    font-family: 'Roboto', sans-serif;
-    margin: 20px;
-    padding: 20px;
-    height: 80vh;
-  }
-
-  .formContact {
-    margin: 10px;
-    margin-top: 50px;
-  }
-
-  /* estilos para clase párrafo y la foto del perro*/
-  .parrafo {
-    margin: 20px;
-    padding: 20px;
-    margin-bottom: 10px;
-    border: 10px;
-    box-sizing: border-box;
-    text-align: justify;
-    font-family: 'Roboto', sans-serif;
-  }
-
-  .parrafo p {
-    margin-bottom: 10px;
-  }
-
-  .parrafo ul {
-    list-style: square;
-    margin-bottom: 5px;
-  }
-
-  .fotoPerro {
-    align-items: center;
-  }
-
-  #mascotitas {
-    width: 98vw;
-  }
-
-  .indexito {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1, 30vw);
-  }
-
-  .indexito .parrafo {
-    margin-left: 50px;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .indexito button {
-    margin-top: 100px;
-    width: 40%;
-    height: 20%;
-    object-fit: contain;
-  }
-
-  .botoncito {
-    background-color: #678fe0;
-    border-color: lightblue;
-    align-items: center;
-    padding: 10px;
-    margin: 10px;
-    margin-left: 30px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
-  }
-
-  .botoncito a {
-    text-decoration: none;
-    color: white;
-  }
-
-  .botoncito:hover {
-    background-color: lightseagreen;
-  }
-
-  h3 {
-    margin-top: 20px;
-  }
-
-  main p {
-    align-items: center;
-    margin: 10px;
-    border: 20px;
-    padding: 5px;
-    width: 75%;
-  }
-
-  .misyvis {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    text-align: center;
-    width: 50%;
-  }
-
-  .misyvis h5 {
-    color: blue;
-    font-weight: bold;
-    box-sizing: border-box;
-  }
-
-  #mis {
-    box-sizing: border-box;
-    width: calc(100%*1/2);
-    border: solid lightsteelblue;
-  }
-
-  #vis {
-    box-sizing: border-box;
-    width: calc(100%*1/2);
-    border: solid lightsteelblue;
-  }
-
-  .perrofeliz {
-    box-sizing: border-box;
-    align-content: center;
-    margin-left: 200px;
-    margin-bottom: 20px;
-  }
-
-  #privacidad {
-    margin-top: 50px;
-  }
-
-  /* footer */
-  footer {
-    background-color: lightblue;
-    height: 200px;
-    width: 100%;
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .foot1 img {
-    width: 18%;
-  }
-
-  .logo {
-    align-items: flex-start;
-    margin-left: 10px;
-  }
-
-  .logo:hover {
-    background-color: cyan;
-  }
-
-  footer ul {
-    list-style: none;
-  }
-
-  footer ul li {
-    padding: 20px;
-    font-size: 15px;
-  }
-
-  .foot1 ul li {
-    flex-direction: row;
-  }
-
-  footer li:hover {
-    background-color: cyan;
-  }
-
-  footer li:active {
-    background-color: orchid;
-  }
-
-  footer a {
-    font-family: 'Amatic SC', cursive;
-    font-size: 18px;
-    text-decoration: none;
-    color: #fff;
-  }
-
-  .derechos p {
-    font-family: 'Roboto', sans-serif;
-  }
+.perrofeliz img{
+  width: 250px;
+}
+.misyvis{
+  border: 2px solid black;
+}
+.container{
+  margin-top: 30px;
+}
+#image-sand{
+  width: 250px;
+}
+.info2{
+  border: 2px solid red;
+}
+.card{
+  background-color: thistle !important;
+}
+.laGaleria{
+  margin-top: 40px;
 }
