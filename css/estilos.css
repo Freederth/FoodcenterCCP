@@ -59,6 +59,8 @@
     height: 500px;
   }
 }
+
+/* de aquí en adelante, estilos para cosas específicas */
 .navbar{
   font-family: 'Amatic SC',cursive;
   font-size: 30px;
@@ -92,10 +94,11 @@
   width: 250px;
 }
 .info2{
-  border: 2px solid red;
+  border: 2px solid grey;
 }
 .card{
-  background-color: thistle !important;
+  background-color:#e3f2fd !important;
+  border: 1px solid grey !important;
 }
 .laGaleria{
   margin-top: 40px;
