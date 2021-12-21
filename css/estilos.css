@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
 /* todavía quiero esta fuente para mis navs */
+/* es amatic */
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+/* oswald */
 
 /* manejo de tamaños del logo para los 3 tamaños */
 /* tamaños para celu */
@@ -61,10 +64,22 @@
 }
 
 /* de aquí en adelante, estilos para cosas específicas */
+html{
+  scroll-behavior: smooth;
+}
 .navbar{
   font-family: 'Amatic SC',cursive;
   font-size: 30px;
   font-weight: 800;
+}
+.navbar a{
+  font-weight: 2000;
+}
+.navbar a:hover{
+  color:teal !important;
+}
+.logo img:hover{
+  transform: scale(1.2);
 }
 
 .indexito{
@@ -76,9 +91,6 @@
 
 .social-links li{
   list-style-type: none;
-}
-.social-links img{
-  width: 30px;
 }
 
 .perrofeliz img{
@@ -93,6 +105,9 @@
 #image-sand{
   width: 250px;
 }
+#image-sand:hover{
+  transform: scale(1.1);
+}
 .info2{
   border: 2px solid grey;
 }
@@ -100,6 +115,29 @@
   background-color:#e3f2fd !important;
   border: 1px solid grey !important;
 }
+.card img:hover{
+  transform: scale(1.13);
+}
 .laGaleria{
   margin-top: 40px;
+}
+.footer-menus ul{
+  list-style: none;
+  padding: 0;
+}
+.footer img:hover{
+  transform: scale(1.2);
+}
+*::selection {
+  background-color: slategrey;
+  color: white;
+}
+a{
+  color: teal;
+}
+.info a{
+  font-weight: 580;
+}
+h2, h3{
+  font-family: 'Oswald',sans-serif;
 }
