@@ -1,0 +1,12 @@
+.footer{
+  & footer-menus ul {
+    list-style: none;
+    padding: 0;
+  }
+  & img:hover {
+    transform: scale(1.2);
+  }
+  .social-links li {
+    list-style-type: none;
+  }
+}

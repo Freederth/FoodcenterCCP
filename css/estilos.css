@@ -1,143 +1,165 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap");
 /* todavía quiero esta fuente para mis navs */
 /* es amatic */
-@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 /* oswald */
+/* la importación de header, main, footer*/
+.navbar {
+  font-family: "Amatic SC", cursive;
+  font-size: 30px;
+  font-weight: 800;
+}
+.navbar a {
+  font-weight: 2000;
+}
+.navbar a:hover {
+  color: teal !important;
+}
+.navbar logo img:hover {
+  transform: scale(1.2);
+}
+
+.footer footer-menus ul {
+  list-style: none;
+  padding: 0;
+}
+.footer img:hover {
+  transform: scale(1.2);
+}
+.footer .social-links li {
+  list-style-type: none;
+}
+
+.indexito {
+  height: 40vh;
+}
+.indexito .btn a {
+  color: white;
+}
+
+.perrofeliz img {
+  width: 250px;
+}
+
+.misyvis {
+  border: 2px solid black;
+}
+
+.container {
+  margin-top: 30px;
+}
+
+.info2 {
+  border: 2px solid grey;
+}
+.info2 #image-sand {
+  width: 250px;
+}
+.info2 #image-sand #image-sand:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.laGaleria {
+  margin-top: 40px;
+}
+.laGaleria .card {
+  background-color: #e3f2fd !important;
+  border: 1px solid grey !important;
+}
+.laGaleria .card img:hover {
+  -webkit-transform: scale(1.13);
+  transform: scale(1.13);
+}
+
+.info a {
+  font-weight: 580;
+}
 
 /* manejo de tamaños del logo para los 3 tamaños */
 /* tamaños para celu */
-@media (min-width:320px) {
+@media (min-width: 320px) {
   .logo img {
     width: 100px;
   }
+
   .address img {
     width: 130px;
   }
+
   .mainContact {
     height: 100vh;
   }
-    .mainUbicacion iframe {
-      width: 300px;
-      height: 450px;
-    }
-}
 
+  .mainUbicacion iframe {
+    width: 300px;
+    height: 450px;
+  }
+}
 /* tamaños para tablet */
-@media (min-width:480px) {
+@media (min-width: 480px) {
   .logo img {
     width: 150px;
   }
-  .address img{
-    width: 180px;
-  }
-  .mainContact {
-    height: 100vh;
-  }
-    .mainUbicacion iframe {
-      width: 400px;
-      height: 400px;
-    }
-}
 
-/* tamaños para desktop */
-@media (min-width:1024px) {
-  .logo img {
-    width: 150px;
-  }
   .address img {
     width: 180px;
   }
+
+  .mainContact {
+    height: 100vh;
+  }
+
+  .mainUbicacion iframe {
+    width: 400px;
+    height: 400px;
+  }
+}
+/* tamaños para desktop */
+@media (min-width: 1024px) {
+  .logo img {
+    width: 150px;
+  }
+
+  .address img {
+    width: 180px;
+  }
+
   .mainAcerca {
     height: 120vh;
   }
-  .mainContact{
+
+  .mainContact {
     height: 100vh;
   }
+
   .primera iframe {
     width: 500px;
     height: 300px;
   }
-  .mainUbicacion iframe{
+
+  .mainUbicacion iframe {
     width: 500px;
     height: 500px;
   }
 }
-
 /* de aquí en adelante, estilos para cosas específicas */
-html{
-  scroll-behavior: smooth;
-}
-.navbar{
-  font-family: 'Amatic SC',cursive;
-  font-size: 30px;
-  font-weight: 800;
-}
-.navbar a{
-  font-weight: 2000;
-}
-.navbar a:hover{
-  color:teal !important;
-}
-.logo img:hover{
-  transform: scale(1.2);
-}
-
-.indexito{
-  height: 40vh;
-}
-.btn a{
-  color: white;
-}
-
-.social-links li{
-  list-style-type: none;
-}
-
-.perrofeliz img{
-  width: 250px;
-}
-.misyvis{
-  border: 2px solid black;
-}
-.container{
-  margin-top: 30px;
-}
-#image-sand{
-  width: 250px;
-}
-#image-sand:hover{
-  transform: scale(1.1);
-}
-.info2{
-  border: 2px solid grey;
-}
-.card{
-  background-color:#e3f2fd !important;
-  border: 1px solid grey !important;
-}
-.card img:hover{
-  transform: scale(1.13);
-}
-.laGaleria{
-  margin-top: 40px;
-}
-.footer-menus ul{
-  list-style: none;
-  padding: 0;
-}
-.footer img:hover{
-  transform: scale(1.2);
-}
 *::selection {
   background-color: slategrey;
   color: white;
 }
-a{
+
+html {
+  scroll-behavior: smooth;
+}
+
+h2, h3 {
+  font-family: "Oswald", sans-serif;
+}
+
+a {
   color: teal;
 }
-.info a{
-  font-weight: 580;
-}
-h2, h3{
-  font-family: 'Oswald',sans-serif;
-}
+
+/*# sourceMappingURL=estilos.css.map */

@@ -1,0 +1,14 @@
+.navbar {
+  font-family: $fuenteHead;
+  font-size: 30px;
+  font-weight: 800;
+  & a {
+    font-weight: 2000;
+  }
+  a:hover {
+    color: $colorLinks !important;
+  }
+  & logo img:hover {
+    transform: scale(1.2);
+  }
+}

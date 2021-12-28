@@ -1,0 +1,44 @@
+.indexito {
+  height: 40vh;
+  & .btn a {
+    color: white;
+  }
+}
+.perrofeliz img {
+  width: 250px;
+}
+
+.misyvis {
+  border: 2px solid black;
+}
+
+.container {
+  margin-top: 30px;
+}
+
+.info2 {
+  border: 2px solid grey;
+  & #image-sand {
+    width: 250px;
+    #image-sand:hover {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+  }
+}
+
+.laGaleria {
+  margin-top: 40px;
+  & .card {
+    background-color: $colorFondo !important;
+    border: 1px solid grey !important;
+
+    & img:hover {
+      -webkit-transform: scale(1.13);
+      transform: scale(1.13);
+    }
+  }
+}
+.info a {
+  font-weight: 580;
+}
