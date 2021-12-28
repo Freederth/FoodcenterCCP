@@ -16,11 +16,11 @@
 .navbar a:hover {
   color: teal !important;
 }
-.navbar logo img:hover {
+.navbar .logo img:hover {
   transform: scale(1.2);
 }
 
-.footer footer-menus ul {
+.footer .footer-menus ul {
   list-style: none;
   padding: 0;
 }
