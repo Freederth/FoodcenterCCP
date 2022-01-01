@@ -56,7 +56,7 @@
 .info2 #image-sand {
   width: 250px;
 }
-.info2 #image-sand #image-sand:hover {
+.info2 #image-sand:hover {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }

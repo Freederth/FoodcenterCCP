@@ -20,10 +20,10 @@
   border: 2px solid grey;
   & #image-sand {
     width: 250px;
-    #image-sand:hover {
-      -webkit-transform: scale(1.1);
-      transform: scale(1.1);
-    }
+  }
+  & #image-sand:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
   }
 }
 
