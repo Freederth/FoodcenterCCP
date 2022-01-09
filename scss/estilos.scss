@@ -4,6 +4,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 /* oswald */
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
+// roboto
+
 /* la importación de header, main, footer*/
 @import "variables";
 @import "header";
@@ -70,6 +73,7 @@
 }
 
 /* de aquí en adelante, estilos para cosas específicas */
+
 *::selection {
   background-color: $colorSelect;
   color: $letrasSelect;

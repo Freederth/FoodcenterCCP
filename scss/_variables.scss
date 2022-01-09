@@ -1,7 +1,20 @@
 $fuenteTitulos: 'Oswald',sans-serif;
 $fuenteHead: 'Amatic SC', cursive;
+$fuenteTexto: 'Roboto', sans-serif;
 
-$colorSelect: slategrey;
+// una escala de gris para utilizar libremente
+$grayscale:("100": #EEF1F4,
+  "200": #DFE3E7,
+  "300": #CBCFD2,
+  "400": #B3B6B9,
+  "500": #9CA0A3,
+  "600": #7C7F82,
+  "700": #606365,
+  "800": #4A4C4F,
+  "900": #333536,
+);
+
+$colorSelect: map-get($grayscale, "600");
 $letrasSelect: white;
 
 $colorLinks: teal;

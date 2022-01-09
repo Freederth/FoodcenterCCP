@@ -4,6 +4,7 @@
 /* es amatic */
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 /* oswald */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap");
 /* la importación de header, main, footer*/
 .navbar {
   font-family: "Amatic SC", cursive;
@@ -43,7 +44,16 @@
 }
 
 .misyvis {
+  color: #4A4C4F;
+  font-size: 20px;
+  font-weight: bold;
   border: 2px solid black;
+}
+.misyvis p {
+  font-family: "Roboto", sans-serif;
+}
+.misyvis h2 {
+  font-family: "Oswald", sans-serif;
 }
 
 .container {
@@ -146,7 +156,7 @@
 }
 /* de aquí en adelante, estilos para cosas específicas */
 *::selection {
-  background-color: slategrey;
+  background-color: #7C7F82;
   color: white;
 }
 

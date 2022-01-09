@@ -8,7 +8,21 @@
   width: 250px;
 }
 
+// utilización de un mixin para destacar texto importante
+@mixin important-text {
+  color: map-get($grayscale, "800");
+  font-size: 20px;
+  font-weight: bold;
+  p{
+    font-family: $fuenteTexto;
+  }
+  h2{
+    font-family: $fuenteTitulos;
+  }
+}
+
 .misyvis {
+  @include important-text;
   border: 2px solid black;
 }
 
