@@ -13,7 +13,7 @@ Metí metadatos a cada uno de los HTML, con su descripción y tags correspondien
 - En contacto.html la descripción es "Ponte en contacto con nosotros, ¡encuéntranos en Concepción!"
 - En productos.html la descripción es "Conoce nuestros productos, tenemos muchas opciones para cumplir las necesidades de tu mascota."
 - En ubicacion.html la descripción es "Dónde encontrarnos. Ven a conocer nuestro local."
-- Para finalizar, los tags que metí son los mismos para todos los HTML y son ""alimento perro senior, alimento perro premium, alimento perros y gatos, alimento gato esterilizado, alimento gatos premium, alimento mascotas concepción", elegidos según lo que la gente más buscaba al buscar alimentos para sus mascotas.
+- Para finalizar, los tags que metí son los mismos para todos los HTML y son "alimento perro senior, alimento perro premium, alimento perros y gatos, alimento gato esterilizado, alimento gatos premium, alimento mascotas concepción", elegidos según lo que la gente más buscaba al buscar alimentos para sus mascotas.
 
 Saludos
 
