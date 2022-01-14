@@ -5,6 +5,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 /* oswald */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap");
+/* roboto */
 /* la importación de header, main, footer*/
 .navbar {
   font-family: "Amatic SC", cursive;
@@ -41,6 +42,11 @@
 
 .perrofeliz img {
   width: 250px;
+  filter: grayscale(50%);
+}
+
+.mascotas img {
+  filter: grayscale(40%);
 }
 
 .misyvis {
@@ -85,6 +91,11 @@
 
 .info a {
   font-weight: 580;
+}
+
+.videoyt iframe {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 /* manejo de tamaños del logo para los 3 tamaños */

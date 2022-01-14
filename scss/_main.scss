@@ -6,6 +6,11 @@
 }
 .perrofeliz img {
   width: 250px;
+  filter: grayscale(50%);
+}
+
+.mascotas img{
+  filter: grayscale(40%);
 }
 
 // utilización de un mixin para destacar texto importante
@@ -55,4 +60,9 @@
 }
 .info a {
   font-weight: 580;
+}
+
+.videoyt iframe{
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
