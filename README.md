@@ -15,6 +15,10 @@ Metí metadatos a cada uno de los HTML, con su descripción y tags correspondien
 - En ubicacion.html la descripción es "Dónde encontrarnos. Ven a conocer nuestro local."
 - Para finalizar, los tags que metí son los mismos para todos los HTML y son "alimento perro senior, alimento perro premium, alimento perros y gatos, alimento gato esterilizado, alimento gatos premium, alimento mascotas concepción", elegidos según lo que la gente más buscaba al buscar alimentos para sus mascotas.
 
+## Para la Tercera entrega de proyecto
+
+Arreglé la imagen que utilicé de ejemplo en la portada (tenía una imagen con watermark, robada y totalmente ilegal), sacando una imagen de pixabay. Le metí un filtro desde el CSS, para hacer uso de los últimos tips de Ema.
+
 Saludos
 
 ### Isabel Achurra.
