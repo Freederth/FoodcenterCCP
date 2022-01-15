@@ -17,7 +17,9 @@ Metí metadatos a cada uno de los HTML, con su descripción y tags correspondien
 
 ## Para la Tercera entrega de proyecto
 
-Arreglé la imagen que utilicé de ejemplo en la portada (tenía una imagen con watermark, robada y totalmente ilegal), sacando una imagen de pixabay. Le metí un filtro desde el CSS, para hacer uso de los últimos tips de Ema.
+- Arreglé la imagen que utilicé de ejemplo en la portada (tenía una imagen con watermark, robada y totalmente ilegal), sacando una imagen de pixabay. Le metí un filtro desde el CSS, para hacer uso de los últimos tips de Ema.
+
+- Además, subí el repo por netlify a [FoodcenterCCP](https://www.foodcenterccp.cl)
 
 Saludos
 
