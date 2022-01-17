@@ -148,7 +148,7 @@
   }
 
   .mainAcerca {
-    height: 120vh;
+    min-height: 120vh;
   }
 
   .mainContact {
