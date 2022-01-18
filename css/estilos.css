@@ -66,6 +66,24 @@
   margin-top: 30px;
 }
 
+.ubica {
+  max-width: 100%;
+  position: center;
+}
+.ubica .bodega {
+  background: url(../img/bodega.jpg);
+  background-position: center center;
+}
+
+.formita {
+  max-width: 100%;
+  position: center;
+}
+.formita .wachatele {
+  background: url(../img/contacto.jpg);
+  background-position: center center;
+}
+
 .info2 {
   border: 2px solid grey;
 }
@@ -94,8 +112,10 @@
 }
 
 .videoyt iframe {
+  justify-content: center;
   margin-top: 20px;
   margin-bottom: 20px;
+  min-height: 500px;
 }
 
 /* manejo de tamaños del logo para los 3 tamaños */

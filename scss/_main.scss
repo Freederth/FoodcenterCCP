@@ -35,6 +35,25 @@
   margin-top: 30px;
 }
 
+.ubica{
+  max-width: 100%;
+  position: center;
+  & .bodega{
+    background: url(../img/bodega.jpg);
+    background-position: center center;
+  }
+}
+
+.formita {
+  max-width: 100%;
+  position: center;
+
+  & .wachatele {
+    background: url(../img/contacto.jpg);
+    background-position: center center;
+  }
+}
+
 .info2 {
   border: 2px solid grey;
   & #image-sand {
@@ -63,6 +82,9 @@
 }
 
 .videoyt iframe{
+  justify-content: center;
   margin-top: 20px;
   margin-bottom: 20px;
+  min-height: 500px;
+
 }
