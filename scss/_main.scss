@@ -32,30 +32,38 @@
 }
 
 .container {
-  margin-top: 30px;
+  padding-top: 30px;
 }
 
-.ubica{
-  max-width: 100%;
-  position: center;
-  & .bodega{
-    background: url(../img/bodega.jpg);
-    background-position: center center;
+.mainUbicacion{
+  & .ubica {
+    width: 100%;
+    & .bodega {
+      overflow: hidden;
+      background: url(../img/bodega.jpg);
+      background-position: center center;
+    }
   }
 }
 
-.formita {
-  max-width: 100%;
-  position: center;
-
-  & .wachatele {
-    background: url(../img/contacto.jpg);
-    background-position: center center;
+.mainContact{
+  color: white;
+  background: url(../img/contacto.jpg);
+  background-position: cover;
+  & .formita {
+    font-family: $fuenteTexto;
+    font-weight: 1000;
+    font-size: 20px;
+    max-width: 100%;
+    margin: 10px;
+    position: center;
   }
 }
 
 .info2 {
-  border: 2px solid grey;
+  border: 2px solid $bordeForm;
+  justify-content: center;
+  margin-bottom: 20px;
   & #image-sand {
     width: 250px;
   }
@@ -66,6 +74,7 @@
 }
 
 .laGaleria {
+  justify-content: center;
   margin-top: 40px;
   & .card {
     background-color: $colorFondo !important;
@@ -86,5 +95,4 @@
   margin-top: 20px;
   margin-bottom: 20px;
   min-height: 500px;
-
 }

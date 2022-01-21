@@ -22,6 +22,9 @@
   transform: scale(1.2);
 }
 
+.footer {
+  padding-top: 1px;
+}
 .footer .footer-menus ul {
   list-style: none;
   padding: 0;
@@ -63,29 +66,36 @@
 }
 
 .container {
-  margin-top: 30px;
+  padding-top: 30px;
 }
 
-.ubica {
-  max-width: 100%;
-  position: center;
+.mainUbicacion .ubica {
+  width: 100%;
 }
-.ubica .bodega {
+.mainUbicacion .ubica .bodega {
+  overflow: hidden;
   background: url(../img/bodega.jpg);
   background-position: center center;
 }
 
-.formita {
-  max-width: 100%;
-  position: center;
-}
-.formita .wachatele {
+.mainContact {
+  color: white;
   background: url(../img/contacto.jpg);
-  background-position: center center;
+  background-position: cover;
+}
+.mainContact .formita {
+  font-family: "Roboto", sans-serif;
+  font-weight: 1000;
+  font-size: 20px;
+  max-width: 100%;
+  margin: 10px;
+  position: center;
 }
 
 .info2 {
-  border: 2px solid grey;
+  border: 2px solid #333536;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 .info2 #image-sand {
   width: 250px;
@@ -96,6 +106,7 @@
 }
 
 .laGaleria {
+  justify-content: center;
   margin-top: 40px;
 }
 .laGaleria .card {
@@ -130,12 +141,16 @@
   }
 
   .mainContact {
-    height: 100vh;
+    min-height: 100vh;
   }
 
   .mainUbicacion iframe {
     width: 300px;
     height: 450px;
+  }
+
+  .indexito {
+    min-height: 50vh;
   }
 }
 /* tamaños para tablet */
@@ -180,9 +195,15 @@
     height: 300px;
   }
 
+  .mainUbicacion {
+    width: 100%;
+  }
   .mainUbicacion iframe {
     width: 500px;
     height: 500px;
+  }
+  .mainUbicacion .bodega {
+    margin-left: 0px;
   }
 }
 /* de aquí en adelante, estilos para cosas específicas */

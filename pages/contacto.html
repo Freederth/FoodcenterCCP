@@ -93,53 +93,44 @@
       </nav>
       <!-- fin del navbar -->
     </header>
-    <main class="mainContact container">
-      <h2>Contáctanos</h2>
-      <p>
-        Cualquier duda, ponte en contacto con nosotros, responderemos a la
-        brevedad.
-      </p>
-      <div class="formita">
-        <div class="row">
-          <form class="formContact container col-lg-5 col-md-12">
-            <label for="name">Nombre:</label><br />
-            <textarea
-              type="text"
-              id="name"
-              name="name"
-              rows="1"
-              cols="45"
-            ></textarea
-            ><br />
-            <label for="sname">Apellido:</label><br />
-            <textarea
-              type="text"
-              id="sname"
-              name="sname"
-              rows="1"
-              cols="45"
-            ></textarea
-            ><br />
-            <label for="mail">Correo electrónico:</label><br />
-            <textarea
-              type="email"
-              id="mail"
-              name="mail"
-              rows="1"
-              cols="45"
-            ></textarea
-            ><br />
-            <label for="mensaje">Escriba un mensaje:</label><br />
-            <textarea
-              id="mensaje"
-              name="mensaje"
-              rows="12"
-              cols="45"
-            ></textarea>
-            <br />
-            <input type="submit" value="Enviar" />
-          </form>
-          <div class="wachatele container col-lg-7 col-md-12"></div>
+    <main class="mainContact">
+      <div class="textoContacto container">
+        <h2>Contáctanos</h2>
+        <p>
+          Cualquier duda, ponte en contacto con nosotros, responderemos a la
+          brevedad.
+        </p>
+        <div class="formita">
+          <div class="row">
+            <form class="formContact container col-lg-5 col-md-12">
+              <label for="name" class="form-label">Nombre:</label><br />
+              <input
+                class="form-control"
+                type="text"
+                id="name"
+                name="name"
+                rows="1"
+                cols="45"
+              />
+              <label for="sname" class="form-label">Apellido:</label><br />
+              <input class="form-control" type="text" id="sname" name="sname" />
+              <label for="mail" class="form-label">Correo electrónico:</label>
+              <input class="form-control" type="email" id="mail" name="mail" />
+              <label for="mensaje" class="form-label"
+                >Escriba un mensaje:</label
+              >
+              <textarea
+                class="form-control"
+                id="mensaje"
+                name="mensaje"
+                rows="12"
+                cols="45"
+              ></textarea>
+              <br />
+              <button type="submit" class="btn btn-info">Enviar</button>
+            </form>
+            <div class="wachatele container col-lg-7 col-md-12"></div>
+          </div>
         </div>
       </div>
     </main>

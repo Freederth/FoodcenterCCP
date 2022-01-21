@@ -15,6 +15,8 @@ $grayscale:("100": #EEF1F4,
 );
 
 $colorSelect: map-get($grayscale, "600");
+$fondoForm: map-get($grayscale, "400");
+$bordeForm: map-get($grayscale, "900");
 $letrasSelect: white;
 
 $colorLinks: teal;
