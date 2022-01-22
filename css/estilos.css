@@ -197,13 +197,12 @@
 
   .mainUbicacion {
     width: 100%;
+    justify-content: center;
+    padding-bottom: 20px;
   }
   .mainUbicacion iframe {
     width: 500px;
     height: 500px;
-  }
-  .mainUbicacion .bodega {
-    margin-left: 0px;
   }
 }
 /* de aquí en adelante, estilos para cosas específicas */
