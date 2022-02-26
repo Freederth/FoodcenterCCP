@@ -2,24 +2,13 @@
 
 Landing para el sitio FoodcenterCPP.
 
-Esta weá es un HTML culiao, abres el index y está todo listo.
+- El repo está subido a netlify a [FoodcenterCCP](https://www.foodcenterccp.cl) pero me da un par de problemas a veces con el DNS, así que recomiendo usar github-pages mejor.
 
-## Para el desafío del 10 de enero
+## Primera preentrega JS
 
-Metí metadatos a cada uno de los HTML, con su descripción y tags correspondientes, como se pedía para la "Documentación de SEO".
-
-- En index.html la descripción es "Distribución de Vitalcan en Concepción. Dale la alimentación que tu perro y gato merecen."
-- En acerca_de.html la descripción es "Acerca de nosotros. Nuestra misión es darle la alimentación que tu perro y gato merecen. Encuéntranos en Concepción."
-- En contacto.html la descripción es "Ponte en contacto con nosotros, ¡encuéntranos en Concepción!"
-- En productos.html la descripción es "Conoce nuestros productos, tenemos muchas opciones para cumplir las necesidades de tu mascota."
-- En ubicacion.html la descripción es "Dónde encontrarnos. Ven a conocer nuestro local."
-- Para finalizar, los tags que metí son los mismos para todos los HTML y son "alimento perro senior, alimento perro premium, alimento perros y gatos, alimento gato esterilizado, alimento gatos premium, alimento mascotas concepción", elegidos según lo que la gente más buscaba al buscar alimentos para sus mascotas.
-
-## Para la Tercera entrega de proyecto
-
-- Arreglé la imagen que utilicé de ejemplo en la portada (tenía una imagen con watermark, robada y totalmente ilegal), sacando una imagen de pixabay. Le metí un filtro desde el CSS, para hacer uso de los últimos tips de Ema.
-
-- Además, subí el repo por netlify a [FoodcenterCCP](https://www.foodcenterccp.cl)
+- Convertí mi proyecto en un onepager.
+- Para no ser tan invasiva o disruptiva, tendré una html aparte para las transacciones.
+- El JS está siendo llamado desde compras.html y ahí hace el cálculo de lo que te sale todo.
 
 Saludos
 
