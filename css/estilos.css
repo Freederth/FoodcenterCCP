@@ -92,6 +92,10 @@
   position: center;
 }
 
+.mainAcerca {
+  background-color: #e3f2fd;
+}
+
 .info2 {
   border: 2px solid #333536;
   justify-content: center;
