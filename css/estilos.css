@@ -221,6 +221,7 @@ html {
 
 h2, h3 {
   font-family: "Oswald", sans-serif;
+  text-transform: capitalize;
 }
 
 a {

@@ -1,12 +1,15 @@
 let cantidadComprada;
 let precioTotalVenta = 0;
 
-function Producto(nombre, precio, stock, categoria, id) {
+// estructura de los productos
+function Producto(nombre, precio, stock, categoria, id, img, title) {
   this.nombre = nombre;
   this.precio = precio;
   this.stock = stock;
   this.categoria = categoria;
   this.id = id;
+  this.img = img;
+  this.title = title;
 
   this.venta = function (cantidadComprada) {
     this.stock -= cantidadComprada;
@@ -14,13 +17,61 @@ function Producto(nombre, precio, stock, categoria, id) {
   };
 }
 
-const producto1 = new Producto("perro cachorro", 12000, 10, "perro", 001);
-const producto2 = new Producto("perro adulto", 18000, 15, "perro", 002);
-const producto3 = new Producto("gato cachorro", 17000, 8, "gato", 003);
-const producto4 = new Producto("gato adulto", 20000, 12, "gato", 004);
+const producto1 = new Producto(
+  "perro cachorro",
+  12000,
+  10,
+  "perro",
+  001,
+  "../img/img4.png",
+  "Vitalcan Complete perro junior razas medianas y grandes"
+);
+const producto2 = new Producto(
+  "perro adulto",
+  18000,
+  15,
+  "perro",
+  002,
+  "../img/img1.png",
+  "Vitalcan Complete perro adulto razas medianas y grandes"
+);
+const producto3 = new Producto(
+  "gato cachorro",
+  17000,
+  8,
+  "gato",
+  003,
+  "../img/img2.png",
+  "Vitalcan Complete gatos cachorros"
+);
+const producto4 = new Producto(
+  "gato adulto",
+  20000,
+  12,
+  "gato",
+  004,
+  "../img/img3.png",
+  "Vitalcan Complete gato adulto control peso"
+);
 
 const listaProductos = [producto1, producto2, producto3, producto4];
 const carrito = [];
+
+function mostrarProductos() {
+  let catalogo = document.querySelector(".laGaleria");
+  catalogo.innerHTML = "";
+
+  for (const producto of listaProductos) {
+    let contenedor = document.createElement("div");
+
+    contenedor.innerHTML = `<div class="card imagenCatalogo" id="${producto.id} style=width: 18rem">
+                            <h3>${producto.nombre}</h3>
+                            <b>$${producto.precio}</b>
+                            <img class="gallery__img" src="${producto.img}" title="${producto.title}"/>
+                            <p>${producto.title}</p>`;
+    catalogo.appendChild(contenedor);
+  }
+}
 
 function listadoProductos() {
   alert(
@@ -33,6 +84,7 @@ function listadoProductos() {
       "\n4. " +
       producto4.nombre
   );
+  mostrarProductos();
 }
 function stockInsuficiente(stock) {
   alert(
@@ -63,6 +115,19 @@ function compra(producto) {
     stockInsuficiente(producto.stock);
   }
 }
+
+// función para imprimir el total de la boleta
+function impresorPrecios() {
+  let inputPrecio = document.querySelector(".total");
+  inputPrecio.innerHTML = "";
+
+  let contenedor = document.createElement("div");
+
+  contenedor.innerHTML = `<div class="elTotal"">
+                            <b>El total de su boleta es de: $${precioTotalVenta}</b>`;
+  inputPrecio.appendChild(contenedor);
+}
+
 function comprarProductos() {
   let cantidadProductosComprados = parseInt(
     prompt("Ingrese la cantidad de productos distintos que quiere comprar")
@@ -81,6 +146,7 @@ function comprarProductos() {
     }
     alert("El precio de su compra es de: $" + precioTotalVenta);
   }
+  impresorPrecios();
 }
 
 listadoProductos();

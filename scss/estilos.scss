@@ -93,6 +93,7 @@ html {
 }
 h2,h3 {
   font-family: $fuenteTitulos;
+  text-transform: capitalize;
 }
 a {
   color: $colorLinks;
