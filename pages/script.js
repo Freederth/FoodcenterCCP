@@ -64,8 +64,13 @@ function mostrarProductos() {
   for (const producto of listaProductos) {
     let contenedor = document.createElement("div");
 
-    contenedor.innerHTML = `<div class="card imagenCatalogo" id="${producto.id} style=width: 18rem">
-                            <h3>${producto.nombre}</h3>
+    // descubrí que esto se puede hacer así de forma muy descarada
+
+    contenedor.className = "card col-lg-3";
+    contenedor.id = producto.id;
+    contenedor.style = "width: 18rem";
+
+    contenedor.innerHTML = `<h3>${producto.nombre}</h3>
                             <b>$${producto.precio}</b>
                             <img class="gallery__img" src="${producto.img}" title="${producto.title}"/>
                             <p>${producto.title}</p>`;
