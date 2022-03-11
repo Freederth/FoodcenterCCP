@@ -1,5 +1,7 @@
 let cantidadComprada;
 let precioTotalVenta = 0;
+var var1 = "bla";
+var var2 = "bebi";
 
 // estructura de los productos
 function Producto(nombre, precio, stock, categoria, id, img, title) {
@@ -42,7 +44,7 @@ const producto3 = new Producto(
   "gato",
   003,
   "../img/img2.png",
-  "Vitalcan Complete gatos cachorros"
+  "Vitalcan Complete gatos cachorros para toda raza"
 );
 const producto4 = new Producto(
   "gato adulto",
@@ -73,24 +75,24 @@ function mostrarProductos() {
     contenedor.innerHTML = `<h3>${producto.nombre}</h3>
                             <b>$${producto.precio}</b>
                             <img class="gallery__img" src="${producto.img}" title="${producto.title}"/>
-                            <p>${producto.title}</p>`;
+                            <p>${producto.title}</p>
+                            <button type="button" class="btn btn-primary" onclick="addToCart(${producto.precio})">+</button>
+                            <br>`;
+    // voy a utilizar esto de abajo a futuro
+    // contenedor.onclick = () => addToCart(producto);
     catalogo.appendChild(contenedor);
   }
 }
 
-function listadoProductos() {
-  alert(
-    "Tenemos 4 tipos de alimentos: \n1. " +
-      producto1.nombre +
-      "\n2. " +
-      producto2.nombre +
-      "\n3. " +
-      producto3.nombre +
-      "\n4. " +
-      producto4.nombre
-  );
-  mostrarProductos();
+function addToCart(precio) {
+  console.log(precio);
+  carrito.push(precio);
+  precioTotalVenta = carrito.reduce((partialSum, a) => partialSum + a, 0);
+  console.log(carrito);
+  impresorPrecios();
 }
+
+// por ahora no la estoy usando, pero tal vez la vuelva a usar a futuro
 function stockInsuficiente(stock) {
   alert(
     "No tenemos stock suficiente de ese producto, puede comprar hasta " +
@@ -98,27 +100,11 @@ function stockInsuficiente(stock) {
       " unidades"
   );
 }
+
+// por ahora no la estoy usando, pero tal vez la vuelva a usar a futuro
 function stockSuficiente(stock, nombre) {
   stock -= cantidadComprada;
   console.log("Quedan: " + stock + " sacos de alimento para " + nombre);
-}
-
-function calcularPrecio(precio) {
-  carrito.push(cantidadComprada * precio);
-  precioTotalVenta = carrito.reduce((partialSum, a) => partialSum + a, 0);
-  //console.log("por ahora, te sale: " + precioTotalVenta);
-}
-
-function compra(producto) {
-  cantidadComprada = parseInt(
-    prompt("Ingrese la cantidad que quiere comprar:")
-  );
-  if (cantidadComprada <= producto.stock) {
-    producto.venta(cantidadComprada);
-    calcularPrecio(producto.precio);
-  } else {
-    stockInsuficiente(producto.stock);
-  }
 }
 
 // función para imprimir el total de la boleta
@@ -133,28 +119,7 @@ function impresorPrecios() {
   inputPrecio.appendChild(contenedor);
 }
 
-function comprarProductos() {
-  let cantidadProductosComprados = parseInt(
-    prompt("Ingrese la cantidad de productos distintos que quiere comprar")
-  );
-  for (let i = 0; i < cantidadProductosComprados; i++) {
-    let nombreCompra = prompt(
-      "Ingrese el nombre del producto que quiere comprar:"
-    );
-    nombreCompra = nombreCompra.toLowerCase();
-
-    let productoBuscado = listaProductos.find(x => x.nombre == nombreCompra);
-    if (productoBuscado) {
-      compra(productoBuscado);
-    } else {
-      alert("No tenemos ese producto");
-    }
-    alert("El precio de su compra es de: $" + precioTotalVenta);
-  }
-  impresorPrecios();
-}
-
-listadoProductos();
-comprarProductos();
+mostrarProductos();
+impresorPrecios();
 
 console.log(carrito);
