@@ -10,6 +10,12 @@ Landing para el sitio FoodcenterCPP.
 - Para no ser tan invasiva o disruptiva, tendré una html aparte para las transacciones.
 - El JS está siendo llamado desde compras.html y ahí hace el cálculo de lo que te sale todo.
 
+## Segunda preentrega JS
+
+- Ahora se compra con los botones.
+- Se comprueba el stock también al clickear
+- Falta: agregar el JSON para que los objetos sean leídos directo desde ahí y guardados los stocks.
+
 Saludos
 
 ### Isabel Achurra.
