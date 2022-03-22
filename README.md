@@ -20,6 +20,7 @@ Landing para el sitio FoodcenterCPP.
 
 - Incorporé un operador ternario.
 - Metí local storage, acorde a las correcciones de Fran.
+- Mis variables están en vars.js y sólo la "lógica" se mantiene en script.js
 
 Saludos
 
