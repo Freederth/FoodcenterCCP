@@ -16,6 +16,11 @@ Landing para el sitio FoodcenterCPP.
 - Se comprueba el stock también al clickear
 - Falta: agregar el JSON para que los objetos sean leídos directo desde ahí y guardados los stocks.
 
+## Desafío complementario: Optimizando proyecto
+
+- Incorporé un operador ternario.
+- Metí local storage, acorde a las correcciones de Fran.
+
 Saludos
 
 ### Isabel Achurra.
