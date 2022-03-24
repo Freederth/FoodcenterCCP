@@ -22,6 +22,11 @@ Landing para el sitio FoodcenterCPP.
 - Metí local storage, acorde a las correcciones de Fran.
 - Mis variables están en vars.js y sólo la "lógica" se mantiene en script.js
 
+# Desafío obligatorio: Incorporando librerías
+
+- Usé Toastify para notificar que se agregó cierto producto.
+- También notifica que vaciaste el carro.
+
 Saludos
 
 ### Isabel Achurra.
