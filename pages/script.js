@@ -23,27 +23,30 @@ function mostrarProductos() {
                             <p>${producto.title}</p>
                             <button id="boton${producto.id}" type="button" class="btn btn-primary" onclick="addToCart(${producto.precio},${producto.id},${producto.stock})">+</button>
                             <br>`;
+
 		// voy a utilizar esto de abajo a futuro
 		// contenedor.onclick = () => addToCart(producto);
 		catalogo.appendChild(contenedor);
 	}
+	vaciarCarro();
 }
 
 // aquí tengo la función que pasa cuando le meto clicks
 function addToCart(precio, id, stock) {
 	for (producto of listaProductos) {
 		if (producto.id === id) {
-			stock > 0
-				? (carrito.push(precio),
-				  producto.venta(1),
-				  (precioTotalVenta = carrito.reduce(
-						(partialSum, a) => partialSum + a,
-						0
-				  )),
-				  saveInLocalStorage(),
-				  impresorPrecios(),
-				  mostrarProductos())
-				: stockInsuficiente(producto);
+			if (stock > 0) {
+				carrito.push(precio);
+				producto.venta(1);
+
+				precioTotalVenta = carrito.reduce((partialSum, a) => partialSum + a, 0);
+				saveInLocalStorage(); //guardo en el local storage
+				impresorPrecios();
+				mostrarProductos();
+				tostadita("Agregaste '" + producto.title + "' al carro");
+			} else {
+				stockInsuficiente(producto);
+			}
 		}
 	}
 }
@@ -94,18 +97,33 @@ function clearStorage() {
 	console.log("Storage vaciado");
 	localStorage.clear();
 	impresorPrecios();
+	tostadita("Vaciaste el carro!");
 }
 
 function vaciarCarro() {
 	let vaciador = document.querySelector(".vaciarCarro");
 	vaciador.innerHTML = "";
 
-	vaciador.innerHTML = `<button id="vaciadorCarrito" type="button" class="btn btn-danger" onclick="clearStorage()">Vaciar carro</button>`;
-	inputPrecio.appendChild(vaciador);
+	let contenedor = document.createElement("div");
+
+	contenedor.innerHTML = `<button id="vaciadorCarrito" type="button" class="btn btn-danger" onclick="clearStorage();">Vaciar carro</button>`;
+	vaciador.appendChild(contenedor);
+
+	// toast();
+}
+
+function tostadita(text) {
+	Toastify({
+		text,
+		duration: 3000,
+		position: "center",
+		style: {
+			background: "linear-gradient(to right, #00b09b, #96c93d)"
+		}
+	}).showToast();
 }
 
 mostrarProductos();
 impresorPrecios();
-vaciarCarro();
 
 console.log(carrito);
