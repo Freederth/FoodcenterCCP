@@ -1,0 +1,42 @@
+[
+	{
+		"nombre": "perro cachorro",
+		"precio": 12000,
+		"stock": 10,
+		"cantidad": 0,
+		"categoria": "perro",
+		"id": 1,
+		"img": "../img/img4.png",
+		"title": "Vitalcan Complete perro junior razas medianas y grandes"
+	},
+	{
+		"nombre": "perro adulto",
+		"precio": 18000,
+		"stock": 15,
+		"cantidad": 0,
+		"categoria": "perro",
+		"id": 2,
+		"img": "../img/img1.png",
+		"title": "Vitalcan Complete perro adulto razas medianas y grandes"
+	},
+	{
+		"nombre": "gato cachorro",
+		"precio": 17000,
+		"stock": 8,
+		"cantidad": 0,
+		"categoria": "gato",
+		"id": 3,
+		"img": "../img/img2.png",
+		"title": "Vitalcan Complete gatos cachorros para toda raza"
+	},
+	{
+		"nombre": "gato adulto",
+		"precio": 20000,
+		"stock": 12,
+		"cantidad": 0,
+		"categoria": "gato",
+		"id": 4,
+		"img": "../img/img3.png",
+		"title": "Vitalcan Complete gato adulto control peso"
+	}
+]

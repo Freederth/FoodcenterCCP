@@ -1,5 +1,44 @@
 let cantidadComprada = 0;
 let precioTotalVenta = 0;
+let listaProductos = [];
+
+// estructura de los productos
+function Producto(nombre, precio, stock, cantidad, categoria, id, img, title) {
+	this.nombre = nombre;
+	this.precio = precio;
+	this.stock = stock;
+	this.cantidad = cantidad;
+	this.categoria = categoria;
+	this.id = id;
+	this.img = img;
+	this.title = title;
+
+	this.venta = function (cantidadComprada) {
+		this.stock -= cantidadComprada;
+		console.log("El stock remanente es de: " + this.stock + " " + this.nombre);
+	};
+}
+
+fetch("../data.json")
+	.then(response => response.json())
+	.then(data => {
+		data.forEach(producto =>
+			listaProductos.push(
+				new Producto(
+					producto.nombre,
+					producto.precio,
+					producto.stock,
+					producto.cantidad,
+					producto.categoria,
+					producto.id,
+					producto.img,
+					producto.title
+				)
+			)
+		);
+		mostrarProductos();
+		console.log(listaProductos);
+	});
 
 const carrito = [];
 
