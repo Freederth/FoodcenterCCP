@@ -27,6 +27,10 @@ Landing para el sitio FoodcenterCPP.
 - Usé Toastify para notificar que se agregó cierto producto.
 - También notifica que vaciaste el carro.
 
+# Desafío obligatorio: fetch()
+
+- Agregué el método fetch, por lo que ahora los datos vienen desde el data.json
+
 Saludos
 
 ### Isabel Achurra.
